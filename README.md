@@ -1,16 +1,15 @@
-### Hi there 👋
+# Welcome to my profile 👋
+### The person behind the name
+Hi! I'm Max, a Computer Science student from Poland, currently studying at the AGH University of Science and Technology. My IT-related interests include the general area of Machine Learning (especially neural networks used in solving problems regarding computer vision and natural language processing) as well as a little bit of game development.
 
-<!--
-**worthy11/worthy11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Technologies I use
+I code my ML projects in Python, using libraries such as Tensorflow with Keras, ScikitLearn, PyTorch, Pandas and Numpy; when it comes to game dev, I'm a big fan of PyGame. Apart from Python, I'm familiar with C, C++, HTML+CSS and a bit of JS.
 
-Here are some ideas to get you started:
+### Projects
+I'm currently working on a beer-themed roguelike with a few of my fellow students. As a personal project, I'm attempting to write a real-time face recognition software using CNNs.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Goals
+My short-term goals include learning to use technologies such as OpenCV, Docker and Kubernetes. I'm also looking forward to taking part in some Kaggle competitions in order to get familiar with the concept of exploratory data analysis when constructing ML models.
+
+### Collab with me!
+I'm open to collaborative work, so if you'd like to have me on board simply let me know via Discord (worthy_11) or e-mail (slotamax15@gmail.com).
