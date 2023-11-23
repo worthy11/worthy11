@@ -6,6 +6,7 @@ Hi! I'm Max, a Computer Science student from Poland, currently studying at the A
 I code my ML projects in Python, using libraries such as Tensorflow with Keras, ScikitLearn, PyTorch, Pandas and Numpy; when it comes to game dev, I'm a big fan of PyGame. Apart from Python, I'm familiar with C, C++, HTML+CSS and a bit of JS.
 
 ### Projects
+Visit [my website](https://worthy11.github.io/) to read about my completed and ongoing projects in detail. <br />
 I'm currently working on a beer-themed roguelike with a few of my fellow students. As a personal project, I'm attempting to write a real-time face recognition software using CNNs.
 
 ### Goals
