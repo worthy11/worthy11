@@ -3,7 +3,7 @@
 Hi! I'm Max, a Computer Science student from Poland, currently studying at the AGH University of Science and Technology. My IT-related interests include the general area of Machine Learning (especially neural networks used in solving problems regarding computer vision and natural language processing) as well as a little bit of game development.
 
 ### Technologies I use
-I code my ML projects in Python, using libraries such as Tensorflow with Keras, ScikitLearn, PyTorch, Pandas and Numpy; when it comes to game dev, I'm a big fan of PyGame. Apart from Python, I'm familiar with C, C++, HTML+CSS and a bit of JS.
+I code my ML projects in Python, using libraries such as Tensorflow with Keras, ScikitLearn, PyTorch, Pandas and Numpy; when it comes to game dev, I'm a big fan of PyGame. Apart from Python, I'm familiar with C, C++, HTML+CSS and a bit of JS. I've also deployed a [website](https://brave-mushroom-033507c03.4.azurestaticapps.net/) using Azure Static Web Apps and Jekyll themes.
 
 ### Projects
 Visit [my website](https://worthy11.github.io/) to read about my completed and ongoing projects in detail. <br />
