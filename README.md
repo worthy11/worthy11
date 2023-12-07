@@ -1,4 +1,10 @@
 # Welcome to my profile 👋
+### Stuff for software tools
+So that you don't need to read through the whole thing:
+- [GitHub Pages website](https://worthy11.github.io/)
+- [Azure Static Web App](https://brave-mushroom-033507c03.4.azurestaticapps.net/)
+- [Forked repo](https://github.com/worthy11/diffusers) found via [this website](https://paperswithcode.com/paper/improving-sample-quality-of-diffusion-model)
+
 ### The person behind the name
 Hi! I'm Max, a Computer Science student from Poland, currently studying at the AGH University of Science and Technology. My IT-related interests include the general area of Machine Learning (especially neural networks used in solving problems regarding computer vision and natural language processing) as well as a little bit of game development.
 
