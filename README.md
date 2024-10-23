@@ -9,9 +9,9 @@ Apart from Python, I'm familiar with C, C++ and Java, as well as some front-end 
 
 ### Projects
 I'm currently working on a real-time PJM (Polish Sign Language)-to-Polish translation model. I'm also in the process of implementing YOLOv5 from scratch using Torch. My completed projects include:
-- a desktop desigend for learning the Polish Sign Alphabet (OpenCV, TensorFlow, MediaPipe)
-- a sales forecasting app with event context [Hackology hackathon, 2024] (XGBoost, PyTorch, Django, React.js) 
-- a  [HackYeah hackathon, 2024] (OpenCV, MediaPipe, PyTorch, Django, React.js, Azure Speech Service) 
+- a desktop app desigend for learning the Polish Sign Alphabet (OpenCV, TensorFlow, MediaPipe)
+- a sales forecasting web app with event context [Hackology hackathon, 2024] (XGBoost, PyTorch, Django, React.js) 
+- a video analysis web tool for assessing the quality of speech [HackYeah hackathon, 2024] (OpenCV, MediaPipe, PyTorch, Django, React.js, Azure Speech Service) 
 - a simple NN implemented from scratch and trained on MNIST (Numpy)
 - an implementation of LeNet-5 trained on MNIST-Fashion
 
