@@ -56,7 +56,7 @@ Intended for improving travelling and sightseeing experience, Roamly came into e
 - **Technologies**: OpenAI API, Tavily API, Amadeus API <br />
 - [**Repository link**](https://github.com/worthy11/roamly)
 
-### ConnectIT
+### 🟦ConnectIT
 A new programming language I created together with 2 other AGH students, meant for modeling 3D origami structures. Supports various domain-specific as well as standard data types, conditional statements and loops, function declaration and definition, adn object creation. Presented as a web app with an integrated code editor! <br />
 - **Developed for**: Compilation Theory and Compilers course @ AGH <br />
 - **Technologies**: antlr4, Plotly, FastAPI, React.js <br />
