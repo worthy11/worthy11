@@ -2,7 +2,7 @@
 I'm Max, an undergrad CS & AI student @ AGH University of Krakow. I specialize in Data Analysis, ML Models and Agentic AI; also familiar with DevOps! <br />
 
 ### Skills
-[![skills](https://skillicons.dev/icons?i=py,pytorch,sklearn,opencv,git,azure,postgres,sqlite,django,fastapi,c,cpp,java,js,vite,react)](https://skillicons.dev) <br />
+[![skills](https://skillicons.dev/icons?i=py,pytorch,sklearn,opencv,git,azure,postgres,django,fastapi,c,cpp,java,js,vite,react)](https://skillicons.dev) <br />
 
 # Projects
 ## Ongoing
