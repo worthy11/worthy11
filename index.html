@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Max Słota</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header-wrapper">
+        <header class="header">
+          <img src="image.jpg" alt="Max Słota" class="profile-image" />
+          <div class="header-content">
+            <h1 class="name">Max Słota</h1>
+            <p class="subtitle"><b>CS & AI Student @ AGH University of Krakow</b></p>
+            <p class="about-text">
+              I'm Max, an undergrad CS & AI student @ AGH University of Krakow. I
+              specialize in Data Analysis, ML Models and Agentic AI; also familiar
+              with DevOps!
+            </p>
+          </div>
+        </header>
+
+        <nav class="carousel-nav">
+        <button class="carousel-nav-btn active" onclick="showSection(0)">
+          <i class="fas fa-code"></i>
+          <span>Skills</span>
+        </button>
+        <button class="carousel-nav-btn" onclick="showSection(1)">
+          <i class="fas fa-briefcase"></i>
+          <span>Experience</span>
+        </button>
+        <button class="carousel-nav-btn" onclick="showSection(2)">
+          <i class="fas fa-project-diagram"></i>
+          <span>Projects</span>
+        </button>
+        </nav>
+      </div>
+
+      <main class="main-content">
+        <section class="section skills-section carousel-section active" data-section="0">
+          <h2 class="section-title">
+            <i class="fas fa-code"></i>
+            Skills
+          </h2>
+          <div class="section-content">
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain"></i>
+                <span>PyTorch</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <span>scikit-learn</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-eye"></i>
+                <span>OpenCV</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-microsoft"></i>
+                <span>Azure</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>SQLite</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Django</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-bolt"></i>
+                <span>FastAPI</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>C/C++</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-rocket"></i>
+                <span>Vite</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section experience-section carousel-section" data-section="1">
+          <h2 class="section-title">
+            <i class="fas fa-briefcase"></i>
+            Experience
+          </h2>
+          <div class="section-content">
+            <div class="experience-container">
+              <div class="experience-card">
+                <div class="experience-header" onclick="toggleExperience(this)">
+                  <div class="experience-header-content">
+                    <div class="experience-title-wrapper">
+                      <h4 class="experience-title">SENSORBITE</h4>
+                      <p class="experience-role">Junior ML Engineer</p>
+                    </div>
+                    <span class="experience-date">02.2025 - 06.2025</span>
+                  </div>
+                  <i class="fas fa-chevron-down experience-chevron"></i>
+                </div>
+                <div class="experience-content">
+                  <div class="experience-details">
+                    <div class="experience-tasks">
+                      <strong>Tasks:</strong>
+                      <ul>
+                        <li>Designing, implementing and testing agentic RAG workflows with dynamic geospatial and satellite data processing</li>
+                        <li>Integrating REST APIs into Python-based applications, creating back-end API endpoints for use in the front-end</li>
+                      </ul>
+                    </div>
+                    <div class="experience-tech">
+                      <strong>Technologies:</strong> LangChain, Hugging Face Transformers, REST API, React.js
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-card">
+                <div class="experience-header" onclick="toggleExperience(this)">
+                  <div class="experience-header-content">
+                    <div class="experience-title-wrapper">
+                      <h4 class="experience-title">AI Lab Student Research Group</h4>
+                      <p class="experience-role">Member</p>
+                    </div>
+                    <span class="experience-date">04.2024 - PRESENT</span>
+                  </div>
+                  <i class="fas fa-chevron-down experience-chevron"></i>
+                </div>
+                <div class="experience-content">
+                  <div class="experience-details">
+                    <div class="experience-tasks">
+                      <strong>Tasks:</strong>
+                      <ul>
+                        <li>Incorporating pretrained models into applications via APIs to compete in AI-themed hackathons (3rd place at Cassini 2024)</li>
+                        <li>Conducting research on SOTA solutions in AI/ML, attending, and presenting at conferences</li>
+                      </ul>
+                    </div>
+                    <div class="experience-tech">
+                      <strong>Technologies:</strong> PyTorch, Pandas, NumPy, Scikit-learn, Django, React.js
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section projects-section carousel-section" data-section="2">
+          <h2 class="section-title">
+            <i class="fas fa-project-diagram"></i>
+            Projects
+          </h2>
+          <div class="section-content">
+            <div class="projects-container">
+              <div class="project-card ongoing">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        Real-time Polish Sign Language Translator
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">ML</span>
+                      </div>
+                    </div>
+                    <span class="project-status ongoing-badge">Ongoing</span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  As a Project Lead @ AI Lab AGH Student Research Group, I'm
+                  developing a real-time translation system for Polish Sign
+                  Language gloss sequence recognition and translation into
+                  written Polish, reducing raw RGB data to pose landmarks using
+                  Google's MediaPipe module. Together with a team of dedicated
+                  researchers, we have developed the first PSL recognition
+                  dataset.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                      Presented at: Krakow Tech Summit 2024 @ Krakow, AINOW 2025
+                      @ Nice
+                    </span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>PyTorch, OpenCV, MediaPipe, Microsoft Azure</span>
+                  </div>
+                  <a
+                    href="https://github.com/AI-LAB-AGH/PSL-Translator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card ongoing">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        Glioblastoma In Vivo Growth Simulation
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">ML</span>
+                      </div>
+                    </div>
+                    <span class="project-status ongoing-badge">Ongoing</span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  Inspired by several articles on the topic of agentic
+                  multi-scale tumor growth models, I developed a simulation
+                  environment which considers nutrient concentration, gas
+                  diffusion across blood vessel walls, intra-vascular pressure
+                  and many more factors. Validated on data obtained from
+                  experiments on mice. Created as a team effort together with 2
+                  students @ AGH.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>
+                      Developed for: Discrete Systems Simulations course @ AGH
+                    </span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>Python, NumPy, Matplotlib</span>
+                  </div>
+                  <a
+                    href="https://github.com/worthy11/tumor-simulation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card ongoing">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        MiniORM - A Custom Object-Relational Mapping Library
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">Software Development</span>
+                        <span class="project-tag">Backend</span>
+                      </div>
+                    </div>
+                    <span class="project-status ongoing-badge">Ongoing</span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  I'm working on a custom ORM Python module which enables
+                  manipulation of persistent storage without writing a line of
+                  SQL. Classes' attributes, domain-specific behaviour,
+                  inheritance, and other relationships will translate into a
+                  structured database automatically. Developed together with 2
+                  other students @ AGH.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Developed for: Design Patterns course @ AGH</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>FastAPI, React.js, sqlite3</span>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card ongoing">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        Make-up Invariant Face Verification System
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">ML</span>
+                      </div>
+                    </div>
+                    <span class="project-status ongoing-badge">Ongoing</span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  I'm a part of a team of 2, implementing a system capable of
+                  face verification despite makeup application. We explore
+                  different approaches to the issue, including transfer learning
+                  and finetuning or employing triplet loss in model training
+                  from scratch. CSD-MT model is used for data augmentation,
+                  while the VGGFace model is compared against our own solution
+                  inspired by FaceNet.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Developed for: Project Studio course @ AGH</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>Tensorflow, Keras, OpenCV, Matplotlib</span>
+                  </div>
+                  <a
+                    href="https://github.com/worthy11/face-verification"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card completed">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        Satellite-based Vehicle Mobility Estimation System
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">ML</span>
+                      </div>
+                    </div>
+                    <span class="project-status completed-badge">
+                      Completed
+                    </span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  3rd place @ Cassini 2024 across Poland. I implemented a
+                  rule-based, fuzzy-logic expert system which uses satellite
+                  data and vehicle characteristics to provide reliable paths for
+                  emergency and military vehicles in difficult terrain.
+                  Developed within 48 hours :)
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-trophy"></i>
+                    <span>Presented at: Cassini 2024</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>
+                      scikit-fuzzy, Sentinel API, SoilGrids, Open Street Map API
+                    </span>
+                  </div>
+                  <a
+                    href="https://github.com/AI-LAB-AGH/Cassini2024-Hackathon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card completed">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        Video Analysis Tool for Speech Quality Assessment
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Software Development</span>
+                        <span class="project-tag">Frontend</span>
+                        <span class="project-tag">Backend</span>
+                      </div>
+                    </div>
+                    <span class="project-status completed-badge">
+                      Completed
+                    </span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  I deployed a solution which integrates video, sound, and
+                  transcript analysis to provide a concise review of the overall
+                  presentation quality, as well as a list of possible
+                  improvements. Developed within 24 hours together with AI Lab
+                  AGH.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-code"></i>
+                    <span>Developed for: HackYeah 2024</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>
+                      Django, React.js, OpenAI API, Azure Speech Service, OpenCV
+                    </span>
+                  </div>
+                  <a
+                    href="https://github.com/worthy11/hackyeah2024"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card completed">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        Sales Estimator with Event Context
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">ML</span>
+                        <span class="project-tag">Software Development</span>
+                        <span class="project-tag">Frontend</span>
+                        <span class="project-tag">Backend</span>
+                      </div>
+                    </div>
+                    <span class="project-status completed-badge">
+                      Completed
+                    </span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  Leveraging decision tree models for sequence modeling, I
+                  created a sales level estimation system that considers events
+                  such as natural disasters, popular artists' shows, and tariff
+                  introductions in order to produce its predictions. I took on
+                  deploying and developing a UI for the solution implemented as
+                  a team effort together with AI Lab AGH. Developed within 24
+                  hours :)
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-code"></i>
+                    <span>Developed for: Hackology 2024</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>
+                      Pandas, scikit-learn, OpenAI API, Django, React.js
+                    </span>
+                  </div>
+                  <a
+                    href="https://github.com/AI-LAB-AGH/Krakology"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card completed">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">Roamly.ai</h4>
+                      <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Software Development</span>
+                        <span class="project-tag">Frontend</span>
+                        <span class="project-tag">Backend</span>
+                      </div>
+                    </div>
+                    <span class="project-status completed-badge">
+                      Completed
+                    </span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  Intended for improving travelling and sightseeing experience,
+                  Roamly came into existence as our idea for the HackYeah 2025
+                  hackathon. Integrating a handful of useful travel-related APIs
+                  together with an agentic approach supported by vector search
+                  resulted in a clean web app, where you can record your
+                  journeys, get inspired by others' experiences, and ask your AI
+                  assistant for direct suggestions. Developed within 24 hours :)
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-code"></i>
+                    <span>Developed for: HackYeah 2025</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>OpenAI API, Tavily API, Amadeus API</span>
+                  </div>
+                  <a
+                    href="https://github.com/worthy11/roamly"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card completed">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">ConnectIT</h4>
+                      <div class="project-tags">
+                        <span class="project-tag">Software Development</span>
+                        <span class="project-tag">Frontend</span>
+                        <span class="project-tag">Backend</span>
+                      </div>
+                    </div>
+                    <span class="project-status completed-badge">
+                      Completed
+                    </span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <p class="project-description">
+                  A new programming language I created together with 2 other AGH
+                  students, meant for modeling 3D origami structures. Supports
+                  various domain-specific as well as standard data types,
+                  conditional statements and loops, function declaration and
+                  definition, and object creation. Presented as a web app with
+                  an integrated code editor!
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>
+                      Developed for: Compilation Theory and Compilers course @
+                      AGH
+                    </span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>antlr4, Plotly, FastAPI, React.js</span>
+                  </div>
+                  <a
+                    href="https://github.com/worthy11/connectIT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
