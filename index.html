@@ -5,117 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Max Słota</title>
+    <title>Max Słota - Portfolio</title>
   </head>
   <body>
     <div class="app">
-      <div class="header-wrapper">
-        <header class="header">
-          <img src="image.jpg" alt="Max Słota" class="profile-image" />
-          <div class="header-content">
-            <h1 class="name">Max Słota</h1>
-            <p class="subtitle"><b>CS & AI Student @ AGH University of Krakow</b></p>
-            <p class="about-text">
-              I'm Max, an undergrad CS & AI student @ AGH University of Krakow. I
-              specialize in Data Analysis, ML Models and Agentic AI; also familiar
-              with DevOps!
-            </p>
+      <aside class="sidebar">
+        <div class="header-sidebar">
+          <img src="photo.png" alt="Max Słota" class="profile-image" />
+          <h1 class="name">Max Słota</h1>
+          <p class="subtitle">CS & AI Student @ AGH University of Krakow</p>
+          <p class="about-text">
+            I specialize in <b>Data Analysis</b>, <b>ML Models</b> and <b>Agentic AI</b>. Go-to fullstack tools include React.js and FastAPI or Django; familiar with DevOps.
+            <br /><br />
+            Presented my research at <b>Krakow Tech Summit 2024</b> and <b>AINOW 2025 @ Nice</b>.
+            Received a government grant and Rector's scholarship for my academic achievements.
+            <br /><br />
+            <span style="font-weight: bold; text-align: center;">Visit my socials:</span>
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/worthy11" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/max-slota" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
-        </header>
+        </div>
+      </aside>
 
-        <nav class="carousel-nav">
-        <button class="carousel-nav-btn active" onclick="showSection(0)">
-          <i class="fas fa-code"></i>
-          <span>Skills</span>
-        </button>
-        <button class="carousel-nav-btn" onclick="showSection(1)">
-          <i class="fas fa-briefcase"></i>
-          <span>Experience</span>
-        </button>
-        <button class="carousel-nav-btn" onclick="showSection(2)">
-          <i class="fas fa-project-diagram"></i>
-          <span>Projects</span>
-        </button>
-        </nav>
-      </div>
-
-      <main class="main-content">
-        <section class="section skills-section carousel-section active" data-section="0">
-          <h2 class="section-title">
-            <i class="fas fa-code"></i>
-            Skills
-          </h2>
+      <div class="main-content-wrapper">
+        <main class="main-content">
+        <section class="section skills-section expanded">
+          <div class="section-header" onclick="toggleSection(this)">
+            <h2 class="section-title">Skills</h2>
+            <i class="fas fa-chevron-down section-chevron"></i>
+          </div>
           <div class="section-content">
-            <div class="skills-grid">
-              <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
+            <div class="skill-category">
+              <h3 class="skill-category-title">Languages</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-code"></i>
+                  <span>C</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-code"></i>
+                  <span>C++</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
               </div>
-              <div class="skill-item">
-                <i class="fas fa-brain"></i>
-                <span>PyTorch</span>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">AI/ML</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-brain"></i>
+                  <span>PyTorch</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-chart-line"></i>
+                  <span>scikit-learn</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-brain"></i>
+                  <span>TensorFlow</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-brain"></i>
+                  <span>Keras</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-robot"></i>
+                  <span>LangChain</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-brain"></i>
+                  <span>Hugging Face</span>
+                </div>
               </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-line"></i>
-                <span>scikit-learn</span>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">Data Analysis</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-table"></i>
+                  <span>Pandas</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-calculator"></i>
+                  <span>NumPy</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQLite</span>
+                </div>
               </div>
-              <div class="skill-item">
-                <i class="fas fa-eye"></i>
-                <span>OpenCV</span>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">Visualization</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-eye"></i>
+                  <span>OpenCV</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-chart-bar"></i>
+                  <span>Matplotlib</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-chart-bar"></i>
+                  <span>Plotly</span>
+                </div>
               </div>
-              <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-microsoft"></i>
-                <span>Azure</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>SQLite</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Django</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-bolt"></i>
-                <span>FastAPI</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-code"></i>
-                <span>C/C++</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-java"></i>
-                <span>Java</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-rocket"></i>
-                <span>Vite</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <span>React</span>
+            </div>
+            
+            <div class="skill-category">
+              <h3 class="skill-category-title">Stack</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fab fa-python"></i>
+                  <span>Django</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-bolt"></i>
+                  <span>FastAPI</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-rocket"></i>
+                  <span>Vite</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-microsoft"></i>
+                  <span>Azure</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section experience-section carousel-section" data-section="1">
-          <h2 class="section-title">
-            <i class="fas fa-briefcase"></i>
-            Experience
-          </h2>
+        <section class="section experience-section expanded">
+          <div class="section-header" onclick="toggleSection(this)">
+            <h2 class="section-title">Experience</h2>
+            <i class="fas fa-chevron-down section-chevron"></i>
+          </div>
           <div class="section-content">
             <div class="experience-container">
               <div class="experience-card">
@@ -175,11 +229,11 @@
           </div>
         </section>
 
-        <section class="section projects-section carousel-section" data-section="2">
-          <h2 class="section-title">
-            <i class="fas fa-project-diagram"></i>
-            Projects
-          </h2>
+        <section class="section projects-section expanded">
+          <div class="section-header" onclick="toggleSection(this)">
+            <h2 class="section-title">Projects</h2>
+            <i class="fas fa-chevron-down section-chevron"></i>
+          </div>
           <div class="section-content">
             <div class="projects-container">
               <div class="project-card ongoing">
@@ -199,27 +253,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  As a Project Lead @ AI Lab AGH Student Research Group, I'm
-                  developing a real-time translation system for Polish Sign
-                  Language gloss sequence recognition and translation into
-                  written Polish, reducing raw RGB data to pose landmarks using
-                  Google's MediaPipe module. Together with a team of dedicated
-                  researchers, we have developed the first PSL recognition
-                  dataset.
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>
-                      Presented at: Krakow Tech Summit 2024 @ Krakow, AINOW 2025
-                      @ Nice
-                    </span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>PyTorch, OpenCV, MediaPipe, Microsoft Azure</span>
-                  </div>
                   <a
                     href="https://github.com/AI-LAB-AGH/PSL-Translator"
                     target="_blank"
@@ -229,6 +262,23 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                Real-time translation system for Polish Sign Language gloss sequence recognition and translation into written Polish,
+                reducing raw RGB data to pose landmarks using Google's MediaPipe module. Together with a team of dedicated researchers,
+                we have developed the first PSL recognition dataset. A letter-learning application is available as a demo.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                      Krakow Tech Summit 2024 @ Krakow, AINOW 2025
+                      @ Nice
+                    </span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>PyTorch, OpenCV, MediaPipe, Microsoft Azure</span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -249,26 +299,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  Inspired by several articles on the topic of agentic
-                  multi-scale tumor growth models, I developed a simulation
-                  environment which considers nutrient concentration, gas
-                  diffusion across blood vessel walls, intra-vascular pressure
-                  and many more factors. Validated on data obtained from
-                  experiments on mice. Created as a team effort together with 2
-                  students @ AGH.
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>
-                      Developed for: Discrete Systems Simulations course @ AGH
-                    </span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>Python, NumPy, Matplotlib</span>
-                  </div>
                   <a
                     href="https://github.com/worthy11/tumor-simulation"
                     target="_blank"
@@ -278,6 +308,22 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  A simulation environment modeling nutrient concentration, gas diffusion, and intra-vascular pressure, refined through
+                  repeated experiments and statistical analysis. Validated on real-world data, the solution provides real-time
+                  visualization of the developing cells and their environment.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>
+                      Discrete Systems Simulations course @ AGH
+                    </span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>Python, NumPy, Matplotlib</span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -300,21 +346,61 @@
                 </div>
                 <div class="project-content">
                   <p class="project-description">
-                  I'm working on a custom ORM Python module which enables
-                  manipulation of persistent storage without writing a line of
-                  SQL. Classes' attributes, domain-specific behaviour,
-                  inheritance, and other relationships will translate into a
-                  structured database automatically. Developed together with 2
-                  other students @ AGH.
+                  Custom ORM Python module enabling manipulation of persistent storage with no SQL involved. Automate translating
+                  attributes, domain-specific behaviour, inheritance, and relations into a structured database.
                 </p>
                 <div class="project-details">
                   <div class="project-info">
                     <i class="fas fa-graduation-cap"></i>
-                    <span>Developed for: Design Patterns course @ AGH</span>
+                    <span>Design Patterns course @ AGH</span>
                   </div>
                   <div class="project-tech">
                     <i class="fas fa-tools"></i>
                     <span>FastAPI, React.js, sqlite3</span>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="project-card ongoing">
+                <div class="project-header" onclick="toggleProject(this)">
+                  <div class="project-header-content">
+                    <div class="project-title-wrapper">
+                      <h4 class="project-title">
+                        AquaTest - Aquarium Parameter Monitoring with Automatic Feeding
+                      </h4>
+                      <div class="project-tags">
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Software Development</span>
+                      </div>
+                    </div>
+                    <span class="project-status ongoing-badge">Ongoing</span>
+                  </div>
+                  <i class="fas fa-chevron-down project-chevron"></i>
+                </div>
+                <div class="project-content">
+                  <a
+                    href="https://github.com/worthy11/iot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    View Repository
+                  </a>
+                  <p class="project-description">
+                  Using an ESP32 chip combined with temperature, pH, and break-beam sensors, the system allows for remote water parameter
+                  monitoring and scheduled feeding. The product comes with an OLED display, a dedicated mobile app, BLE provisioning, and
+                  WiFi connectivity for real-time control from anywhere in the world.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Internet of Things course @ AGH</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>C, ESP-IDF, NimBLE, ESP32, I2C, 1-Wire</span>
                   </div>
                 </div>
                 </div>
@@ -337,24 +423,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  I'm a part of a team of 2, implementing a system capable of
-                  face verification despite makeup application. We explore
-                  different approaches to the issue, including transfer learning
-                  and finetuning or employing triplet loss in model training
-                  from scratch. CSD-MT model is used for data augmentation,
-                  while the VGGFace model is compared against our own solution
-                  inspired by FaceNet.
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Developed for: Project Studio course @ AGH</span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>Tensorflow, Keras, OpenCV, Matplotlib</span>
-                  </div>
                   <a
                     href="https://github.com/worthy11/face-verification"
                     target="_blank"
@@ -364,6 +432,20 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  Leveraging transfer learning, finetuning, and data augmentation, the system tackles verification in spite of extensive
+                  make-up application. Using CSD-MT for style transfer, Google's MediaPipe for detection, and VGGFace as a foundation
+                  model, the pipeline provides efficient and precise results.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Project Studio course @ AGH</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>Tensorflow, Keras, OpenCV, Matplotlib</span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -387,24 +469,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  3rd place @ Cassini 2024 across Poland. I implemented a
-                  rule-based, fuzzy-logic expert system which uses satellite
-                  data and vehicle characteristics to provide reliable paths for
-                  emergency and military vehicles in difficult terrain.
-                  Developed within 48 hours :)
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-trophy"></i>
-                    <span>Presented at: Cassini 2024</span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>
-                      scikit-fuzzy, Sentinel API, SoilGrids, Open Street Map API
-                    </span>
-                  </div>
                   <a
                     href="https://github.com/AI-LAB-AGH/Cassini2024-Hackathon"
                     target="_blank"
@@ -414,6 +478,21 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  Combining a rule-based, fuzzy-logic expert system with satellite data and vehicle characteristics to provide reliable
+                  paths for emergency and military vehicles in difficult, offroad terrain.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-trophy"></i>
+                    <span>Cassini 2024</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>
+                      scikit-fuzzy, Sentinel API, SoilGrids, Open Street Map API
+                    </span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -439,24 +518,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  I deployed a solution which integrates video, sound, and
-                  transcript analysis to provide a concise review of the overall
-                  presentation quality, as well as a list of possible
-                  improvements. Developed within 24 hours together with AI Lab
-                  AGH.
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-code"></i>
-                    <span>Developed for: HackYeah 2024</span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>
-                      Django, React.js, OpenAI API, Azure Speech Service, OpenCV
-                    </span>
-                  </div>
                   <a
                     href="https://github.com/worthy11/hackyeah2024"
                     target="_blank"
@@ -466,6 +527,21 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  Integrating video, sound, and transcript analysis to provide a concise review of the overall video presentation quality,
+                  as well as a list of possible improvements. Developed within 24 hours together with AI Lab AGH.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-code"></i>
+                    <span>HackYeah 2024</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>
+                      Django, React.js, OpenAI API, Azure Speech Service, OpenCV
+                    </span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -491,26 +567,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  Leveraging decision tree models for sequence modeling, I
-                  created a sales level estimation system that considers events
-                  such as natural disasters, popular artists' shows, and tariff
-                  introductions in order to produce its predictions. I took on
-                  deploying and developing a UI for the solution implemented as
-                  a team effort together with AI Lab AGH. Developed within 24
-                  hours :)
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-code"></i>
-                    <span>Developed for: Hackology 2024</span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>
-                      Pandas, scikit-learn, OpenAI API, Django, React.js
-                    </span>
-                  </div>
                   <a
                     href="https://github.com/AI-LAB-AGH/Krakology"
                     target="_blank"
@@ -520,6 +576,21 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  Leveraging decision trees and feature engineering, the sales level estimation system considers events such as natural
+                  disasters, popular artists' shows, and tariff introductions in order to produce accurate predictions.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-code"></i>
+                    <span>Hackology 2024</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>
+                      Pandas, scikit-learn, OpenAI API, Django, React.js
+                    </span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -543,24 +614,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  Intended for improving travelling and sightseeing experience,
-                  Roamly came into existence as our idea for the HackYeah 2025
-                  hackathon. Integrating a handful of useful travel-related APIs
-                  together with an agentic approach supported by vector search
-                  resulted in a clean web app, where you can record your
-                  journeys, get inspired by others' experiences, and ask your AI
-                  assistant for direct suggestions. Developed within 24 hours :)
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-code"></i>
-                    <span>Developed for: HackYeah 2025</span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>OpenAI API, Tavily API, Amadeus API</span>
-                  </div>
                   <a
                     href="https://github.com/worthy11/roamly"
                     target="_blank"
@@ -570,6 +623,21 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  Intended for improving the travel planning experience, Roamly.ai integrates a handful of useful travel-related APIs
+                  together with an agentic approach supported by vector search. The system exposes its UI through a web application, where
+                  users record their journeys, get inspired by others, and receive creative suggestions and compete trip plans from an AI
+                  assistant.
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-code"></i>
+                    <span>HackYeah 2025</span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>OpenAI API, Tavily API, Amadeus API</span>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -592,26 +660,6 @@
                   <i class="fas fa-chevron-down project-chevron"></i>
                 </div>
                 <div class="project-content">
-                  <p class="project-description">
-                  A new programming language I created together with 2 other AGH
-                  students, meant for modeling 3D origami structures. Supports
-                  various domain-specific as well as standard data types,
-                  conditional statements and loops, function declaration and
-                  definition, and object creation. Presented as a web app with
-                  an integrated code editor!
-                </p>
-                <div class="project-details">
-                  <div class="project-info">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>
-                      Developed for: Compilation Theory and Compilers course @
-                      AGH
-                    </span>
-                  </div>
-                  <div class="project-tech">
-                    <i class="fas fa-tools"></i>
-                    <span>antlr4, Plotly, FastAPI, React.js</span>
-                  </div>
                   <a
                     href="https://github.com/worthy11/connectIT"
                     target="_blank"
@@ -621,13 +669,31 @@
                     <i class="fab fa-github"></i>
                     View Repository
                   </a>
+                  <p class="project-description">
+                  A new programming language I created together with 2 other AGH students, meant for modeling 3D origami structures.
+                  Supports various domain-specific as well as standard data types, conditional statements and loops, function declaration
+                  and definition, and object creation. Presented as a web app with an integrated code editor!
+                </p>
+                <div class="project-details">
+                  <div class="project-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>
+                      Compilation Theory and Compilers course @
+                      AGH
+                    </span>
+                  </div>
+                  <div class="project-tech">
+                    <i class="fas fa-tools"></i>
+                    <span>antlr4, Plotly, FastAPI, React.js</span>
+                  </div>
                 </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
+        </main>
+      </div>
     </div>
     <script src="scripts.js"></script>
   </body>

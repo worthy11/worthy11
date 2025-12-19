@@ -45,3 +45,14 @@ function showSection(index) {
     }
   });
 }
+
+function toggleSection(header) {
+  const section = header.closest(".section");
+  const isExpanded = section.classList.contains("expanded");
+
+  if (isExpanded) {
+    section.classList.remove("expanded");
+  } else {
+    section.classList.add("expanded");
+  }
+}
