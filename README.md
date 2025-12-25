@@ -1,6 +1,6 @@
 # Welcome 👋
 
-I'm Max, an undergrad CS & AI student @ AGH University of Krakow. I specialize in Data Analysis, ML Models and Agentic AI; also familiar with DevOps! [Visit my website](https://worthy11.github.io/worthy11/) <br />
+I'm Max, an undergrad CS & AI student @ AGH University of Krakow. I specialize in Data Analysis, ML Models and Agentic AI; also familiar with DevOps! **View my portfolio [here](https://worthy11.github.io/worthy11/).** <br />
 
 ### Skills
 
